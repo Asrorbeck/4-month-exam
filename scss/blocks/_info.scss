@@ -1,0 +1,115 @@
+.info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    &__container {
+        display: none;
+        max-width: 512px;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    &__container--active {
+        display: block;
+        max-width: 512px;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 33px;
+        background-color: #F8FAFD;
+        margin-bottom: 44px;
+    }
+    
+    &__heading {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #222531;
+    }
+    
+    &__main-img{
+        width: 228px;
+        height: 299px;
+        object-fit: contain;
+        margin: auto;
+        margin-bottom: 51px;
+    }
+    
+    &__main-text {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 170.3%;
+        color: #58667E;
+        margin-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    
+    &__author-wrapper, &__category-wrapper,  &__publish-wrapper, &__year-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 17px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    &__author-heading, &__year-heading, &__publish-heading, &__category-heading, &__pages-heading {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #222531;
+        margin-right: 10px;
+    }
+    
+    &__result {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #0D75FF;
+        padding: 5px 24px;
+        background-color: rgba(13, 117, 255, 0.09);
+        border-radius: 30px;
+    }
+    
+    &__pages-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 110px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    &__bottom {
+        display: flex;
+        justify-content: end;
+        padding: 15px 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    &__btn-read {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 9px 38px;
+        background: #75828A;
+        border-radius: 4px;
+        color: #FFFFFF;
+    }
+}

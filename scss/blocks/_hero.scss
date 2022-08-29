@@ -1,0 +1,191 @@
+.hero {
+    
+    &__container {
+        display: flex;
+    }
+    
+    &__sidebar {
+        max-width: 218px;
+        width: 100%;
+        padding: 25px;
+    }
+    
+    &__sidebar-heading {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+    }
+    
+    &__sidebar-text {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 155.6%;
+        color: #000000;
+        max-width: 218px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    &__sidebar-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    &__sidebar-item {
+        padding: 15px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #F8FAFD;
+        border-radius: 4px;
+    }
+    
+    &__sidebar-item-heading {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+    
+    &__sidebar-item-author {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 18px;
+        color: #757881;
+    }
+    
+    &__s-right-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    &__sidebar-read {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+    
+    &__sidebar-remove {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+    
+    &__main {
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        background-color: #F8FAFD;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    &__main-item {
+        max-width: 242px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 13px 18px;
+        background-color: #FFFFFF;
+    }
+    
+    &__item-img {
+        width: 201px;
+        height: 202px;
+        object-fit: contain;
+        padding: 18px 18px;
+        background: #F8FAFD;
+        border-radius: 5px;
+        margin-bottom: 19px;
+    }
+    
+    &__item-heading {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+    }
+    
+    &__item-author {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        color: #757881;
+    }
+    
+    &__item-year {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        color: #757881;
+        margin-bottom: 10px;
+    }
+    
+    &__btn-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+        margin-bottom: 5px;
+    }
+    
+    &__btn-bookmark {
+        padding: 10px 25px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        background: #FFD80D;
+        border-radius: 4px;
+    }
+    
+    &__btn-info {
+        padding: 10px 26px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #0D75FF;
+        background: rgba(13, 117, 255, 0.05);
+        border-radius: 4px;
+    }
+    
+    &__btn-read {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #75828A;
+        border-radius: 4px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+}

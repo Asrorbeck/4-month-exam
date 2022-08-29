@@ -4,29 +4,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
     <title>Asrorbek</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-
+            <div class="header__container">
+                <div class="header__top">
+                    <a href="#" class="header__logo-link"><img src="./img/logo.svg" alt="logo"></a>
+                    
+                    <form class="header__top-right">
+                        <input type="text" class="header__search" name="searchBook" id="searchBook" placeholder="Search book">
+                        
+                        <button class="header__changer"><img src="./img/sun.svg" alt="sun"></button>
+                    </form>
+                </div>
+                
+                <div class="header__bottom">
+                    <p class="header__result">Showing <span id="result-number">0</span> Result(s)</p>
+                    
+                    <a href="#" class="header__order"><img src="./img/calendar.svg" alt="calendar"> Order by newest</a>
+                </div>
+            </div>
         </div>
     </header>
-
+    
     <main class="main">
         <section class="hero">
             <div class="container">
                 <div class="hero__container">
-
+                    <div class="hero__sidebar">
+                        <h2 class="hero__sidebar-heading">Bookmarks</h2>
+                        
+                        <p class="hero__sidebar-text">If you don't like to read, you haven't found the right book</p>
+                        
+                        <ul class="hero__sidebar-list">
+                            
+                        </ul>
+                    </div>
+                    
+                    <ul class="hero__main">
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="info">
+            <div class="info__container">
+                <div class="info__top">
+                    <h3 class="info__heading">Python</h3>
+                    
+                    <button class="info__btn-close"><img src="./img/close.png" alt="close"></button>
+                </div>
+                
+                <div class="info__main-img">
+                    <img class="info-img" src="./img/info.png" alt="img of modal" width="228">
+                </div>
+                
+                <p class="info__main-text">
+                    Culpa nulla pariatur cupidatat nisi incididunt ea do ipsum. Incididunt quis mollit elit commodo cillum eiusmod reprehenderit labore irure. Cillum et incididunt et nostrud exercitation quis aute laboris non ut adipisicing. Laboris ad minim aute nulla proident deserunt velit anim sunt aliquip ut sit. Exercitation aliquip ullamco officia non aliqua. Sint deserunt aliquip veniam id eiusmod sit consectetur mollit ea aliqua officia consequat. Magna non mollit nisi est commodo voluptate aute id. Deserunt nostrud id do in nisi mollit deserunt non. Pariatur fugiat cillum irure elit sint nisi ad ipsum culpa deserunt cupidatat esse consequat laboris. Id aliquip non consectetur esse proident duis Lorem.
+                </p>
+                
+                <div class="info__author-wrapper">
+                    <p class="info__author-heading">Author: </p>
+                    
+                    <p class="info__result info__author">Jamal Kasper</p>
+                </div>
+                
+                <div class="info__year-wrapper">
+                    <p class="info__year-heading">Published: </p>
+                    
+                    <p class="info__result info__year">2019</p>
+                </div>
+                
+                <div class="info__publish-wrapper">
+                    <p class="info__publish-heading ">Publishers: </p>
+                    
+                    <p class="info__result info__publisher">Hollman</p>
+                </div>
+                
+                <div class="info__category-wrapper">
+                    <p class="info__category-heading ">Categories: </p>
+                    
+                    <p class="info__result info__category">Computers</p>
+                </div>
+                
+                <div class="info__pages-wrapper">
+                    <p class="info__pages-heading ">Pages Count: </p>
+                    
+                    <p class="info__result info__count">346</p>
+                </div>
+                
+                <div class="info__bottom">
+                    <a class="info__btn-read">Read</a>
                 </div>
             </div>
         </section>
     </main>
-
+    
     <footer class="footer">
         <div class="container">
             
         </div>
     </footer>
+    
+    
+    
+    <template id="bookTemplate">
+        <li class="hero__main-item">
+            <img class="hero__item-img" src="./img/li-img.jpg" alt="li-img">
+            
+            <h4 class="hero__item-heading">Python</h4>
+            
+            <p class="hero__item-author">David M. Beazley</p>
+            
+            <p class="hero__item-year">2009</p>
+            
+            <div class="hero__btn-wrapper">
+                <button class="hero__btn-bookmark">Bookmark</button>
+                
+                <button class="hero__btn-info">More Info</button>
+            </div>
+            
+            <a class="hero__btn-read">Read</a>
+        </li>
+    </template>
+    
+    <template id="bookmarkedList">
+        <li class="hero__sidebar-item">
+            <div class="hero__s-left-wrapper">
+                <p class="hero__sidebar-item-heading">Python</p>
+                
+                <p class="hero__sidebar-item-author">David M. Beazley</p>
+            </div>
+            
+            <div class="hero__s-right-wrapper">
+                <a class="hero__sidebar-read"><img src="./img/book-open.svg" alt=""></a>
+                
+                <button class="hero__sidebar-remove"><img src="./img/delete.svg" alt=""></button>
+            </div>
+        </li>
+    </template>
+    
+    <template id="info-template">
+        <div class="info__top">
+            <h3 class="info__heading">Python</h3>
+            
+            <button class="info__btn-close"><img src="./img/close.png" alt="close"></button>
+        </div>
+        
+        <div class="info__main-img">
+            <img class="info-img" src="./img/info.png" alt="img of modal" width="228">
+        </div>
+        
+        <p class="info__main-text">
+            Culpa nulla pariatur cupidatat nisi incididunt ea do ipsum. Incididunt quis mollit elit commodo cillum eiusmod reprehenderit labore irure. Cillum et incididunt et nostrud exercitation quis aute laboris non ut adipisicing. Laboris ad minim aute nulla proident deserunt velit anim sunt aliquip ut sit. Exercitation aliquip ullamco officia non aliqua. Sint deserunt aliquip veniam id eiusmod sit consectetur mollit ea aliqua officia consequat. Magna non mollit nisi est commodo voluptate aute id. Deserunt nostrud id do in nisi mollit deserunt non. Pariatur fugiat cillum irure elit sint nisi ad ipsum culpa deserunt cupidatat esse consequat laboris. Id aliquip non consectetur esse proident duis Lorem.
+        </p>
+        
+        <div class="info__author-wrapper">
+            <p class="info__author-heading">Author: </p>
+            
+            <p class="info__result info__author">Jamal Kasper</p>
+        </div>
+        
+        <div class="info__year-wrapper">
+            <p class="info__year-heading">Published: </p>
+            
+            <p class="info__result info__year">2019</p>
+        </div>
+        
+        <div class="info__publish-wrapper">
+            <p class="info__publish-heading ">Publishers: </p>
+            
+            <p class="info__result info__publisher">Hollman</p>
+        </div>
+        
+        <div class="info__category-wrapper">
+            <p class="info__category-heading ">Categories: </p>
+            
+            <p class="info__result info__category">Computers</p>
+        </div>
+        
+        <div class="info__pages-wrapper">
+            <p class="info__pages-heading ">Pages Count: </p>
+            
+            <p class="info__result info__count">346</p>
+        </div>
+        
+        <div class="info__bottom">
+            <a class="info__btn-read">Read</a>
+        </div>
+    </template>
+    
+    
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
